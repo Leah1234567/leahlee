@@ -9,19 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "projects",
-          description: "Hands-on engineering work — from composite vehicle structures to accessible device design.",
+  },{id: "nav-work",
+          title: "work",
+          description: "Grouped project summaries instead of a separate top-level page for every build.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
-          },
-        },{id: "nav-research",
-          title: "research",
-          description: "Robotics and sensor research at the RoboTouch Lab, UIUC.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "publications",
