@@ -1,35 +1,44 @@
 ---
-layout: about
+layout: home
 title: about
 permalink: /
-subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign
-
+body_class: page-home
+eyebrow: Mechanical engineering student at UIUC
+hero_title: Leah Lee builds hardware that has to work in the real world.
+hero_lead: I design, fabricate, and test physical systems across robotics, vehicle structures, and tactile sensing. The through-line is hands-on engineering work that closes the loop between concept, build, and measured performance.
 profile:
-  align: right
   image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>B.S. Mechanical Engineering</p>
-    <p>UIUC · Expected Dec 2027</p>
-
-selected_papers: true
-social: true
-
-announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: false
-  limit: 3
+profile_title: Current snapshot
+quick_facts:
+  - B.S. in Mechanical Engineering, University of Illinois Urbana-Champaign
+  - Expected graduation: December 2027
+  - Interests: vehicle systems, mechanical design, robotics hardware, validation
+hero_actions:
+  - label: View work
+    url: /projects/
+  - label: Resume
+    url: /resume/
+  - label: GelSphere site
+    url: https://leahsylee.github.io/GelSphere/
+  - label: Email
+    url: mailto:leahlee2@illinois.edu
+focus_areas:
+  - title: Design with fabrication in mind
+    description: I like projects where CAD, tooling, material choices, and assembly constraints all matter early instead of being treated as cleanup work later.
+  - title: Test what the hardware is actually doing
+    description: The most useful part of engineering is usually the feedback loop, so I focus on instrumentation, debugging, and iteration rather than only polished final renders.
+  - title: Work across subsystem boundaries
+    description: My best work sits between structures, mechanisms, controls, and sensing, where the engineering gets more realistic and less neatly separated.
+timeline:
+  - label: Now
+    title: Illini Solar Car
+    description: Leading fairing mold design and composite fabrication while supporting integration across the vehicle build.
+  - label: Research
+    title: UIUC robotics labs
+    description: Developing a climbing inspection robot in the Novel Mobile Robots Lab and a spherical tactile sensor in the RoboTouch Lab.
+  - label: Looking ahead
+    title: Mechanical systems roles
+    description: I am most interested in engineering work centered on hardware development, testing, integration, and validation.
 ---
 
-I am a Mechanical Engineering undergraduate at the University of Illinois at Urbana-Champaign, expecting to graduate in December 2027.
-
-My work focuses on building and evaluating physical systems, including composite vehicle structures, robotic mechanisms, and tactile sensors. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
-
-On [Illini Solar Car](projects/), I design and manufacture composite fairing door molds using 3D-printed tooling and carbon fiber/fiberglass layup, and support vehicle assembly and integration across subteams. I also work on two research projects. At the [Novel Mobile Robots Lab](research/), I develop a self-actuated climbing inspection robot, working on mechanism design, system integration, and experimental testing. At the [RoboTouch Lab](research/), I fabricate and calibrate a spherical tactile sensor and built the image reconstruction pipeline; a conference paper is being prepared for submission to IROS.
-
-I am interested in engineering roles where hardware is be built, tested, and improved, especially in vehicle systems, mechanical design, and validation work.
+I wanted the site to read more like a focused engineering portfolio than a template with many parallel pages. The main work is now grouped around a few stronger projects, with the most complete research project, [GelSphere](https://leahsylee.github.io/GelSphere/), linked out to its own dedicated site.

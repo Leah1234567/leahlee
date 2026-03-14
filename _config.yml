@@ -3,17 +3,16 @@
 # -----------------------------------------------------------------------------
 
 title: Leah Lee # browser tab title
-display_name: "Leah (Seoyeon) Lee" # displayed on the main page heading
+display_name: "Leah Lee" # displayed on the main page heading
 first_name: Leah
 middle_name: Seoyeon
 last_name: Lee
 contact_note: >
   Feel free to reach out via email.
 description: >
-  Mechanical Engineering at UIUC — vehicle systems, mechanical design, controls, and robotics hardware.
+  Mechanical engineering portfolio focused on robotics hardware, vehicle structures, and build-test validation work at UIUC.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Built with Jekyll and GitHub Pages.
 keywords: mechanical-engineering, portfolio, UIUC, robotics, vehicle-systems, composites, controls
 lang: en
 icon:
@@ -55,7 +54,7 @@ external_services:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true

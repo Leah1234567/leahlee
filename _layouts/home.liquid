@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<div class="home-shell">
+  <section class="home-hero">
+    <div class="home-hero-copy">
+      <p class="home-eyebrow">{{ page.eyebrow }}</p>
+      <h1>{{ page.hero_title | default: site.display_name }}</h1>
+      <p class="home-lead">{{ page.hero_lead }}</p>
+
+      <div class="home-actions">
+        {% for action in page.hero_actions %}
+          {% assign action_href = action.url %}
+          {% assign action_external = false %}
+          {% if action_href contains '://' or action_href contains 'mailto:' %}
+            {% assign action_external = true %}
+          {% else %}
+            {% assign action_href = action_href | relative_url %}
+          {% endif %}
+          <a
+            class="home-action{% if forloop.first %} home-action-primary{% endif %}"
+            href="{{ action_href }}"
+            {% if action_external %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+          >
+            {{ action.label }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <aside class="home-profile-card">
+      {% if page.profile and page.profile.image %}
+        <img
+          class="home-profile-image"
+          src="{{ 'assets/img/' | append: page.profile.image | relative_url }}"
+          alt="{{ site.display_name }}"
+          loading="eager"
+        >
+      {% endif %}
+      <div class="home-profile-details">
+        <p>{{ page.profile_title }}</p>
+        <ul>
+          {% for fact in page.quick_facts %}
+            <li>{{ fact }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <section class="home-section">
+    <div class="section-heading">
+      <p>Focus</p>
+      <h2>How I like to work</h2>
+    </div>
+    <div class="focus-grid">
+      {% for area in page.focus_areas %}
+        <article class="focus-card">
+          <h3>{{ area.title }}</h3>
+          <p>{{ area.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="section-heading section-heading-split">
+      <div>
+        <p>Selected work</p>
+        <h2>Projects worth opening first</h2>
+      </div>
+      <a href="{{ '/projects/' | relative_url }}">See all work</a>
+    </div>
+    <div class="featured-work-grid">
+      {% for item in site.data.work.featured %}
+        {% include work_card.liquid item=item featured=true %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="section-heading">
+      <p>Snapshot</p>
+      <h2>What I am doing now</h2>
+    </div>
+    <div class="timeline-list">
+      {% for item in page.timeline %}
+        <article class="timeline-item">
+          <p class="timeline-label">{{ item.label }}</p>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if content != blank %}
+    <section class="home-section home-note">
+      {{ content }}
+    </section>
+  {% endif %}
+</div>

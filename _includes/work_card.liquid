@@ -1,0 +1,65 @@
+{% assign item = include.item %}
+{% assign featured = include.featured | default: false %}
+{% assign item_href = item.href %}
+{% assign item_external = false %}
+{% if item_href contains '://' or item_href contains 'mailto:' %}
+  {% assign item_external = true %}
+{% else %}
+  {% assign item_href = item_href | relative_url %}
+{% endif %}
+
+<article class="work-card{% if featured %} work-card-featured{% endif %}" id="{{ item.slug }}">
+  {% if item.image %}
+    <a
+      class="work-card-media"
+      href="{{ item_href }}"
+      {% if item_external %}
+        target="_blank" rel="noopener noreferrer"
+      {% endif %}
+    >
+      <img src="{{ item.image | relative_url }}" alt="{{ item.title }} preview" loading="lazy">
+    </a>
+  {% endif %}
+
+  <div class="work-card-body">
+    <div class="work-card-meta">
+      <span>{{ item.type }}</span>
+      {% if item.context %}
+        <span>{{ item.context }}</span>
+      {% endif %}
+    </div>
+    <h3>
+      <a
+        href="{{ item_href }}"
+        {% if item_external %}
+          target="_blank" rel="noopener noreferrer"
+        {% endif %}
+      >
+        {{- item.title -}}
+      </a>
+    </h3>
+    <p>{{ item.summary }}</p>
+
+    {% if item.links %}
+      <div class="work-card-links">
+        {% for link in item.links %}
+          {% assign link_href = link.url %}
+          {% assign link_external = false %}
+          {% if link_href contains '://' or link_href contains 'mailto:' %}
+            {% assign link_external = true %}
+          {% else %}
+            {% assign link_href = link_href | relative_url %}
+          {% endif %}
+          <a
+            href="{{ link_href }}"
+            {% if link_external %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+          >
+            {{- link.label -}}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</article>
