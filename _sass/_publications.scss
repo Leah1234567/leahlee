@@ -81,10 +81,15 @@
           }
         }
 
-        > em,
-        > strong {
+        > em {
           border-bottom: 1px solid;
           font-style: normal;
+        }
+
+        > strong {
+          border-bottom: none;
+          font-style: normal;
+          font-weight: 700;
         }
 
         > span.more-authors {
@@ -175,7 +180,8 @@
       }
 
       .periodical {
-        font-size: 0.92rem;
+        font-size: 0.84rem;
+        line-height: 1.35;
       }
     }
     div.award.hidden {
