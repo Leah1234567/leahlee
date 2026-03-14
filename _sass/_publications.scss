@@ -81,7 +81,8 @@
           }
         }
 
-        > em {
+        > em,
+        > strong {
           border-bottom: 1px solid;
           font-style: normal;
         }
@@ -171,6 +172,10 @@
 
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
+      }
+
+      .periodical {
+        font-size: 0.92rem;
       }
     }
     div.award.hidden {

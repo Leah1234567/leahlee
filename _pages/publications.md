@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Conference papers and patents.
+title: Publications
 nav: true
 nav_order: 4
 ---

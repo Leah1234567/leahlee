@@ -37,7 +37,3 @@ A significant part of this work was establishing a repeatable fabrication proces
 
 - **Conference paper submitted to IROS**
 - Established a documented, repeatable fabrication and calibration process
-
-## Paper
-
-<a href="{{ '/assets/pdf/LeahLee_GelSphere_IROS2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> GelSphere: An Omnidirectional Rolling Vision-Based Tactile Sensor for Online 3D Reconstruction and Normal Force Estimation (PDF)</a>

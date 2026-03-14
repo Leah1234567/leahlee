@@ -1,8 +1,7 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Hands-on engineering work — from composite vehicle structures to accessible device design.
 nav: true
 nav_order: 2
 display_categories: [engineering]

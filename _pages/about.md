@@ -1,16 +1,13 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign
+subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign, Expected graduation Dec 2027
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>B.S. Mechanical Engineering</p>
-    <p>UIUC · Expected Dec 2027</p>
+  image_circular: true
 
 selected_papers: true
 social: true
@@ -25,8 +22,6 @@ latest_posts:
   scrollable: false
   limit: 3
 ---
-
-I am a Mechanical Engineering undergraduate at the University of Illinois at Urbana-Champaign, expecting to graduate in December 2027.
 
 My work focuses on building and evaluating physical systems, including composite vehicle structures, robotic mechanisms, and tactile sensors. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
 

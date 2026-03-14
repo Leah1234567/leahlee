@@ -1,8 +1,7 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
-description: Robotics and sensor research at the RoboTouch Lab, UIUC.
 nav: true
 nav_order: 3
 display_categories: [research]
