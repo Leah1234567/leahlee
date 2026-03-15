@@ -49,6 +49,7 @@ _styles: |
 
   .experience-media {
     margin-top: 0.2rem;
+    max-width: 320px;
   }
 
   .experience-media figure {
@@ -70,7 +71,7 @@ _styles: |
     }
 
     .experience-media {
-      max-width: 420px;
+      max-width: 320px;
     }
   }
 ---

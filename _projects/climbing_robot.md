@@ -6,7 +6,7 @@ importance: 1
 category: research
 _styles: |
   .post article > figure {
-    max-width: 22%;
+    max-width: 30%;
     margin: 1rem auto;
   }
 ---
