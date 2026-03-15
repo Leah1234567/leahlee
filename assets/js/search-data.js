@@ -51,27 +51,27 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-assistive-technology-devices",
           title: 'Assistive Technology Devices',
-          description: "Designed and prototyped single-hand-operable assistive devices under strict accessibility, safety, and manufacturing constraints.",
+          description: "Designed one-handed assistive devices with accessibility and manufacturing constraints.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/assistive_tech/";
             },},{id: "projects-self-actuated-climbing-amp-inspection-robot",
           title: 'Self-Actuated Climbing &amp;amp; Inspection Robot',
-          description: "Designed contact mechanism and implemented closed-loop control for a surface inspection robot that tracks flat, curved, and inverted surfaces.",
+          description: "Designed the contact mechanism and control system for a climbing inspection robot.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/climbing_robot/";
             },},{id: "projects-spherical-gelsight-tactile-sensor",
           title: 'Spherical GelSight Tactile Sensor',
-          description: "Developed a vision-based tactile sensor for large-area robotic surface scanning, with custom PCB, multi-part molds, and photometric stereo reconstruction. IROS paper submitted.",
+          description: "Built a spherical vision-based tactile sensor and its reconstruction pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gelsight_sensor/";
             },},{id: "projects-illini-solar-car-composite-structures-amp-vehicle-integration",
           title: 'Illini Solar Car: Composite Structures &amp;amp; Vehicle Integration',
-          description: "Lead design and fabrication of composite fairing components for a formula-style solar race car, from 3D-printed tooling through final assembly.",
+          description: "Design and build composite fairing tooling and parts for a solar race car.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/solar_car/";
             },},{id: "projects-arachnobot-terrain-adaptive-robot",
           title: 'ArachnoBot — Terrain-Adaptive Robot',
-          description: "Built a terrain-adaptive robot with 4-bar linkage legs. 1st Place and Distinguished Robotics award at ASME Engineering Open House (200+ exhibits).",
+          description: "Built a terrain-adaptive walking robot with 4-bar linkage legs.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/spider_robot/";
             },},{
