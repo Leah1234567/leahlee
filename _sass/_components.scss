@@ -59,7 +59,7 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   img {
-    max-width: 220px;
+    max-width: 260px;
     margin: 0 auto;
     height: auto;
   }
@@ -88,7 +88,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 26%;
+    width: 30%;
 
     .address {
       p {
@@ -155,7 +155,7 @@ ul.task-list input[type="checkbox"] {
     }
 
     .card-title {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 600;
     }
 
@@ -167,7 +167,7 @@ ul.task-list input[type="checkbox"] {
   .project-card-img {
     width: 180px;
     min-width: 180px;
-    padding: 1rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.5rem;
 
     img,
     video {
