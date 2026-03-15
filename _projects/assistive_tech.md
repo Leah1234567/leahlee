@@ -2,7 +2,7 @@
 layout: page
 title: "Assistive Technology Devices"
 description: Designed one-handed assistive devices with accessibility and manufacturing constraints.
-img: assets/img/placeholder_project.jpg
+img: assets/img/Assistive.png
 importance: 2
 category: engineering
 ---

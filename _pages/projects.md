@@ -4,7 +4,6 @@ title: Projects
 permalink: /projects/
 nav: true
 nav_order: 2
-description: Selected projects, leadership, and industry experience.
 _styles: |
   .experience-list {
     display: grid;
@@ -37,10 +36,8 @@ _styles: |
   }
 
   .experience-media {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.85rem;
     margin-top: 1rem;
+    max-width: 420px;
   }
 
   .experience-media figure {
@@ -55,67 +52,43 @@ _styles: |
     border-radius: 8px;
     display: block;
   }
-
-  @media (max-width: 768px) {
-    .experience-media {
-      grid-template-columns: 1fr;
-    }
-  }
 ---
 
 <div class="experience-list">
   <section class="experience-item">
     <h2>Illini Solar Car</h2>
     <div class="role">Composite Structures and Vehicle Integration</div>
-    <p>I design and build composite fairing tooling and support vehicle integration for the solar race car team.</p>
-    <p>My work includes mold design, composite layup, finishing, and assembly fit checks.</p>
+    <p>I work on the Illini Solar Car team, specifically on composite fabrication and vehicle subsystem integration. I lead the design and fabrication of fairing door molds using 3D-printed tooling and carbon fiber/fiberglass composite layups. The work involves sanding, trimming, vacuum bagging, and surface finishing to produce parts that meet structural and aerodynamic requirements. I collaborate closely with structures, aerodynamics, and electrical teams to resolve packaging and fitment constraints during vehicle assembly. Much of the work involves translating CAD geometry into manufacturable composite parts and adjusting interfaces so components install reliably within small vehicle tolerances. </p>
     <div class="experience-media">
       {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Illini Solar Car project image" %}
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Illini Solar Car project image" %}
-    </div>
-  </section>
-
-  <section class="experience-item">
-    <h2>Assistive Technology Devices</h2>
-    <div class="role">ASME and Illinois Assistive Technology Program</div>
-    <p>I designed one-handed assistive devices including a vegetable slicer, ziplock bag closer, and iPad holder.</p>
-    <p>The designs were constrained by safety, accessibility, and single-print manufacturability.</p>
-    <div class="experience-media">
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Assistive technology project image" %}
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Assistive technology project image" %}
     </div>
   </section>
 
   <section class="experience-item">
     <h2>ArachnoBot</h2>
     <div class="role">ASME Engineering Open House</div>
-    <p>I designed and built a terrain-adaptive walking robot that uses 4-bar linkage legs.</p>
-    <p>The project won 1st Place and the Distinguished Robotics award at Engineering Open House.</p>
+    <p>ArachnoBot is a terrain-adaptive robot developed for the UIUC Engineering Open House. I designed and built the robot’s leg system, including a 4-bar linkage mechanism to improve stability while moving through uneven surfaces. The project involved mechanism design, rapid prototyping, and iterative testing to achieve reliable motion across different terrain conditions. I also demonstrated the robot to more than 1,000 visitors and explained the design principles behind its locomotion system. The project received 1st Place in Distinguished Robotics among more than 200 exhibits.</p>
     <div class="experience-media">
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="ArachnoBot project image" %}
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="ArachnoBot project image" %}
+      {% include figure.liquid loading="eager" path="/assets/img/Archnobot.png" alt="ArachnoBot project image" %}
+    </div>
+  </section>
+
+  <section class="experience-item">
+    <h2>Assistive Technology Devices</h2>
+    <div class="role">ASME and Illinois Assistive Technology Program</div>
+    <p>This project involved designing assistive devices for individuals who must perform everyday tasks using only one hand. Working with the Illinois Assistive Technology Program and ASME, I designed and prototyped devices such as a one-hand vegetable slicer, Ziplock bag closer, iPad holder, and bowl holder. Designs prioritized one-hand usability, lightweight structure, minimal assembly, and short 3D-printing time. I iterated prototypes to satisfy accessibility constraints while ensuring the devices could be produced with simple single-print fabrication. </p>
+    <div class="experience-media">
+      {% include figure.liquid loading="eager" path="/assets/img/Assistive.png" alt="Assistive technology project image" %}
     </div>
   </section>
 
   <section class="experience-item">
     <h2>Somansa</h2>
-    <div class="role">Industry Experience</div>
-    <p>I worked at Somansa and gained exposure to engineering work in a professional setting.</p>
-    <p>This experience strengthened my interest in practical, build-oriented engineering work.</p>
+    <div class="role">Network Engine Team Researcher Intern</div>
+    <p>During my internship at Somansa, I researched Zero Trust Network Access (ZTNA) systems to support internal product development. I built Python tools to crawl technical documentation, convert HTML and PDF manuals into Markdown, and process the data for use in AI pipelines. These scripts handled issues such as page breaks, inconsistent formatting, and fragmented sentences that occur when converting manuals into machine-readable text. I then developed a Retrieval-Augmented Generation (RAG) system and evaluated different combinations of LLMs, embedding models, and chunking strategies for technical question answering. The results were presented to company leadership and used to guide internal research on future ZTNA products.</p>
     <div class="experience-media">
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Somansa experience image" %}
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="Somansa experience image" %}
+      {% include figure.liquid loading="eager" path="/assets/img/Somansa.png" alt="Somansa experience image" %}
     </div>
   </section>
 
-  <section class="experience-item">
-    <h2>URSA Vice President</h2>
-    <div class="role">Leadership</div>
-    <p>As Vice President, I help organize events, support members, and coordinate club activities.</p>
-    <p>The role has strengthened my communication, planning, and team leadership skills.</p>
-    <div class="experience-media">
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="URSA leadership image" %}
-      {% include figure.liquid loading="eager" path="/assets/img/placeholder_project.jpg" alt="URSA leadership image" %}
-    </div>
-  </section>
 </div>

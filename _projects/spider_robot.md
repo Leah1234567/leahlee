@@ -2,7 +2,7 @@
 layout: page
 title: "ArachnoBot — Terrain-Adaptive Robot"
 description: "Built a terrain-adaptive walking robot with 4-bar linkage legs."
-img: assets/img/placeholder_project.jpg
+img: assets/img/Archnobot.png
 importance: 3
 category: engineering
 ---
