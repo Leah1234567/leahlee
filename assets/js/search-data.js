@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "Selected projects, leadership, and industry experience.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -54,9 +54,9 @@ ninja.data = [{
           description: "Designed one-handed assistive devices with accessibility and manufacturing constraints.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/assistive_tech/";
-            },},{id: "projects-self-actuated-climbing-amp-inspection-robot",
-          title: 'Self-Actuated Climbing &amp;amp; Inspection Robot',
-          description: "Designed the contact mechanism and control system for a climbing inspection robot.",
+            },},{id: "projects-self-actuated-climbing-inspection-robot",
+          title: 'Self-Actuated Climbing Inspection Robot',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/climbing_robot/";
             },},{id: "projects-spherical-gelsight-tactile-sensor",
