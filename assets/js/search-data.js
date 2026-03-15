@@ -9,12 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-experience",
-          title: "Experience",
-          description: "Selected projects, research, leadership, and industry experience.",
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "Selected projects, leadership, and industry experience.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/experience/";
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-research",
+          title: "Research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "Publications",
