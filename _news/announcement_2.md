@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the **Novel Mobile Robots Lab**, working on self-actuated climbing robot controls under Prof. Justin Yim.
+Joined the **Novel Mobile Robots Lab**, working on self-actuated climbing robot under Prof. Justin Yim.

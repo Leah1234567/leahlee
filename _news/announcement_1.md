@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Conference paper on the spherical GelSight tactile sensor submitted to **IROS 2026**.
+Conference paper on GelSphere submitted to **IROS 2026**.

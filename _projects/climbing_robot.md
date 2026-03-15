@@ -1,9 +1,14 @@
 ---
 layout: page
 title: "Self-Actuated Climbing Inspection Robot"
-img: assets/img/climbing_bot_thumbnail.png
+img: assets/img/climbing_bot_normal_testing.png
 importance: 1
 category: research
+_styles: |
+  .post article > figure {
+    max-width: 22%;
+    margin: 1rem auto;
+  }
 ---
 
 {% comment %} TODO: Add a hero image — assets/img/climbing_robot_hero.jpg {% endcomment %}
