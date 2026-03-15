@@ -23,6 +23,6 @@ latest_posts:
   limit: 3
 ---
 
-My work focuses on building and evaluating mechanical systems. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
+I build and test mechanical systems, from composite structures to robotic hardware and tactile sensors.
 
-On **[Illini Solar Car](projects/)**, I design and manufacture composite fairing door using 3D-printed tooling and carbon fiber/fiberglass layup, and support vehicle assembly and integration across subteams. I also work on two research projects. At the **[Novel Mobile Robots Lab](research/)**, I develop a self-actuated climbing inspection robot, working on mechanism design, system integration, and experimental testing. At the **[RoboTouch Lab](research/)**, I fabricated and tested GelSphere and built the image reconstruction pipeline; a conference paper is submitted to **IROS**.
+My work includes **[Illini Solar Car](/experience/)**, the **[Novel Mobile Robots Lab](/experience/)**, and the **[RoboTouch Lab](/experience/)**. I also serve as **URSA Vice President** and have industry experience at **Somansa**.
