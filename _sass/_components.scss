@@ -61,8 +61,7 @@ ul.task-list input[type="checkbox"] {
   img {
     max-width: 220px;
     margin: 0 auto;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
+    height: auto;
   }
 
   .more-info {
@@ -149,6 +148,12 @@ ul.task-list input[type="checkbox"] {
       width: 100%;
     }
 
+    video {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
     .card-title {
       font-size: 1.1rem;
       font-weight: 600;
@@ -164,7 +169,8 @@ ul.task-list input[type="checkbox"] {
     min-width: 180px;
     padding: 1rem;
 
-    img {
+    img,
+    video {
       border-radius: 6px;
       object-fit: cover;
     }

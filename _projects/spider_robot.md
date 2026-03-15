@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ArachnoBot — Terrain-Adaptive Robot"
-description: "Built a terrain-adaptive robot with 4-bar linkage legs. 1st Place and Distinguished Robotics award at ASME Engineering Open House (200+ exhibits)."
+description: "Built a terrain-adaptive walking robot with 4-bar linkage legs."
 img: assets/img/placeholder_project.jpg
 importance: 3
 category: engineering
@@ -11,18 +11,18 @@ category: engineering
 
 ## Overview
 
-I designed and built a terrain-adaptive walking robot — ArachnoBot — for the University of Illinois Engineering Open House. The robot uses a 4-bar linkage mechanism for each leg, allowing it to traverse uneven surfaces without complex active control of each joint. It won **1st Place** and the **Distinguished Robotics** award at ASME, competing against 200+ exhibits.
+I designed and built ArachnoBot for the University of Illinois Engineering Open House. Its 4-bar linkage legs let it move over uneven surfaces without complex joint-level control. It won **1st Place** and the **Distinguished Robotics** award at ASME.
 
 ## Mechanism Design
 
-The 4-bar linkage converts simple rotary motion into a walking gait that naturally lifts each leg over obstacles. By tuning the link lengths and pivot locations, the foot traces a path that clears the ground during the swing phase and provides stable ground contact during the stance phase.
+The 4-bar linkage converts rotary motion into a walking gait that lifts each leg over obstacles and maintains stable ground contact.
 
-This approach keeps the control system simple — a single motor drives the linkage — while still producing adaptive locomotion behavior. The tradeoff is that the gait pattern is fixed by the geometry, so the robot can't dynamically adjust its stride length or height, but for the target terrain conditions it works reliably.
+This keeps the control system simple: a single motor drives the linkage while the geometry sets the gait.
 
 {% comment %} TODO: Add linkage diagram — assets/img/arachnobot_linkage.jpg {% endcomment %}
 
 ## Demonstration
 
-The robot was presented to over 1,000 visitors at Engineering Open House, where I explained the design rationale and demonstrated the robot's operation on different surface conditions.
+I demonstrated the robot at Engineering Open House and explained the design to visitors.
 
 {% comment %} TODO: Add demo photos or video {% endcomment %}

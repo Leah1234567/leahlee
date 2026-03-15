@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Self-Actuated Climbing & Inspection Robot"
-description: Designed contact mechanism and implemented closed-loop control for a surface inspection robot that tracks flat, curved, and inverted surfaces.
+description: Designed the contact mechanism and control system for a climbing inspection robot.
 img: assets/img/placeholder_project.jpg
 importance: 1
 category: research
@@ -11,27 +11,27 @@ category: research
 
 ## Overview
 
-This project, conducted at the Novel Mobile Robots Lab at UIUC under Prof. Justin Yim, develops a self-actuated robot capable of climbing and inspecting surfaces — including flat, curved, and inverted geometries. My work focuses on contact mechanism design, rapid prototyping, and the closed-loop control system that keeps the robot reliably adhered to the surface during motion.
+This project at the Novel Mobile Robots Lab develops a robot that climbs and inspects flat, curved, and inverted surfaces. My work focuses on contact mechanism design, prototyping, and closed-loop control.
 
 ## Problem
 
-A climbing robot needs to maintain consistent contact with a surface while moving. On flat surfaces this is straightforward, but on curved or inverted surfaces, the contact forces, angles, and adhesion conditions change continuously. The system has to detect these changes and adjust in real time.
+A climbing robot has to keep steady contact while moving. That is harder on curved or inverted surfaces, where the contact forces change continuously.
 
-Early testing revealed inconsistent behavior: the robot would lose contact unpredictably on certain surface geometries. The question was whether the problem was mechanical (the contact mechanism), electrical (the sensor feedback), or in the control logic.
+Early tests showed unstable contact on some surfaces, so the problem had to be traced across the mechanism, sensing, and control logic.
 
 ## Approach
 
-**Contact mechanism design and prototyping.** I create CAD models and rapid prototypes to achieve stable contact and manufacturable geometry. The design process involves iterating on the physical mechanism that presses the robot against the surface, tuning its compliance to handle changes in surface curvature.
+**Contact mechanism design and prototyping.** I build CAD models and prototypes to improve contact stability and manufacturability.
 
-**Test rig and system modeling.** I built a test rig and system model to size actuators and validate control performance. This isolates variables so I can test the mechanism on different surface profiles and log sensor data to identify failure modes.
+**Test rig and system modeling.** I built a test rig and model to size actuators, isolate variables, and validate control performance.
 
-**Closed-loop contact control.** I developed a closed-loop contact module using force and pressure sensor feedback to regulate contact force in real time. The robot uses vision-based tactile sensing for surface inspection while the control loop maintains stable adhesion.
+**Closed-loop contact control.** I used force and pressure feedback to regulate contact force in real time and maintain adhesion during inspection.
 
 {% comment %} TODO: Add images of testing setup and CAD models {% endcomment %}
 
 ## Results
 
-After iterating on both the mechanism geometry and the control parameters, the robot achieved repeatable surface tracking across flat, curved, and inverted surfaces. The key insight was that the mechanical and control systems couldn't be designed independently — the compliance of the contact mechanism determines the dynamics the controller has to handle, and vice versa.
+After iterating on the mechanism and controller together, the robot achieved repeatable tracking on flat, curved, and inverted surfaces.
 
 ## Progress Report
 
@@ -41,4 +41,4 @@ For more detail on the mechanism design, control architecture, and test results,
 
 ## Relevance
 
-This kind of work — diagnosing why a physical system doesn't behave as designed, isolating the root cause across mechanical and control domains, and iterating toward reliable performance — is directly relevant to vehicle testing, validation, and systems integration roles in automotive engineering.
+This project strengthened my experience in testing, root-cause analysis, and hardware-system integration.

@@ -4,7 +4,14 @@
       <div class="d-flex flex-row">
         {% if project.img %}
           <div class="project-card-img flex-shrink-0">
-            {% include figure.liquid loading="eager" path=project.img sizes="180px" alt="project thumbnail" class="card-img" %}
+            {% assign project_media_ext = project.img | split: '.' | last | downcase %}
+            {% if project_media_ext == 'mp4' %}
+              <video class="card-img" autoplay muted loop playsinline>
+                <source src="{{ project.img | relative_url }}" type="video/mp4">
+              </video>
+            {% else %}
+              {% include figure.liquid loading="eager" path=project.img sizes="180px" alt="project thumbnail" class="card-img" %}
+            {% endif %}
           </div>
         {% endif %}
         <div class="flex-grow-1">

@@ -7,7 +7,7 @@ subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign, 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
 
 selected_papers: true
 social: true
@@ -23,8 +23,8 @@ latest_posts:
   limit: 3
 ---
 
-My work focuses on building and evaluating mechanical systems, including composite vehicle structures, robotic mechanisms, and tactile sensors. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
+I build and test mechanical systems, from composite vehicle structures to robotic mechanisms and tactile sensors.
 
-On **[Illini Solar Car](projects/)**, I design and manufacture composite fairing door molds using 3D-printed tooling and carbon fiber/fiberglass layup, and support vehicle assembly and integration across subteams. I also work on two research projects. At the **[Novel Mobile Robots Lab](research/)**, I develop a self-actuated climbing inspection robot, working on mechanism design, system integration, and experimental testing. At the **[RoboTouch Lab](research/)**, I fabricate and calibrate a spherical tactile sensor and built the image reconstruction pipeline; a conference paper is being prepared for submission to IROS.
+At **[Illini Solar Car](projects/)**, I design and build composite fairing tooling and support vehicle integration. At the **[Novel Mobile Robots Lab](research/)**, I work on mechanism design, system integration, and testing for a climbing inspection robot. At the **[RoboTouch Lab](research/)**, I build and calibrate a spherical tactile sensor and its reconstruction pipeline.
 
-I am interested in engineering roles where hardware is be built, tested, and improved, especially in vehicle systems, mechanical design, and validation work.
+I am interested in roles focused on vehicle systems, mechanical design, and hardware validation.

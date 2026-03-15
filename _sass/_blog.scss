@@ -101,6 +101,12 @@
 }
 
 .post {
+  padding-bottom: 3rem;
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
@@ -164,4 +170,10 @@
       text-decoration: none;
     }
   }
+}
+
+.desc {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
 }
