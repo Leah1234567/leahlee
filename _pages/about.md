@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign, Expected graduation Dec 2027
+subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign, Expected graduation May 2027
 
 profile:
   align: right
@@ -23,6 +23,6 @@ latest_posts:
   limit: 3
 ---
 
-My work focuses on development of mechanical systems. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
+My focus is on development of mechanical systems. I am especially interested in taking a design from concept to working hardware, such as designing parts, fabricating, testing performance, and refining the system based on measured results.
 
 On **[Illini Solar Car](projects/)**, I design and manufacture composite fairing door using 3D-printed tooling and carbon fiber/fiberglass layup. I also work on two research projects. At the **[Novel Mobile Robots Lab](research/)**, I develop a self-actuated climbing inspection robot, working on mechanism design, system integration, and experimental testing. At the **[RoboTouch Lab](research/)**, I designed, fabicated, and tested GelSphere, with an underreview paper submitted to **IROS 2026**.
