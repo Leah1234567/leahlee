@@ -81,7 +81,7 @@ _styles: |
     <div class="experience-text">
       <h2>Illini Solar Car</h2>
       <div class="role">Composite Structures and Vehicle Integration</div>
-      <p>I work on the Illini Solar Car team, specifically on composite fabrication and vehicle subsystem integration. I lead the design and fabrication of fairing door molds using 3D-printed tooling and carbon fiber/fiberglass composite layups. The work involves sanding, trimming, vacuum bagging, and surface finishing to produce parts that meet structural and aerodynamic requirements. I collaborate closely with structures, aerodynamics, and electrical teams to resolve packaging and fitment constraints during vehicle assembly. Much of the work involves translating CAD geometry into manufacturable composite parts and adjusting interfaces so components install reliably within small vehicle tolerances.</p>
+      <p>I work on the Illini Solar Car team, specifically on composite fabrication and vehicle subsystem integration. I design and fabricate fairing door molds using 3D-printed tooling and carbon fiber/fiberglass composite layups. The work involves sanding, trimming, vacuum bagging, and surface finishing to produce parts that meet structural and aerodynamic requirements. I collaborate closely with structures, aerodynamics, and electrical teams to resolve packaging and fitment constraints during vehicle assembly. Much of the work involves translating CAD geometry into manufacturable composite parts and adjusting interfaces so components install reliably within small vehicle tolerances.</p>
     </div>
   </section>
 
