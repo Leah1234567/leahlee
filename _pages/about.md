@@ -6,7 +6,7 @@ subtitle: Mechanical Engineering · University of Illinois at Urbana-Champaign, 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_img.jpg
   image_circular: false
 
 selected_papers: true
