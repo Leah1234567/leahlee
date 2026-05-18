@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-research",
-          title: "Research",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/research/";
-          },
         },{id: "nav-publications",
           title: "Publications",
           description: "",
@@ -37,26 +30,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/resume/";
           },
-        },{id: "news-joined-the-robotouch-lab-working-on-spherical-tactile-sensor-under-prof-wenzhen-yuan",
-          title: 'Joined the RoboTouch Lab, working on Spherical Tactile Sensor under Prof. Wenzhen Yuan....',
-          description: "",
-          section: "News",},{id: "news-arachnobot-won-1st-place-and-distinguished-robotics-at-asme-engineering-open-house-competing-against-200-exhibits",
-          title: 'ArachnoBot won 1st Place and Distinguished Robotics at ASME Engineering Open House, competing...',
-          description: "",
-          section: "News",},{id: "news-joined-the-novel-mobile-robots-lab-working-on-self-actuated-climbing-robot-under-prof-justin-yim",
-          title: 'Joined the Novel Mobile Robots Lab, working on self-actuated climbing robot under Prof....',
-          description: "",
-          section: "News",},{id: "news-conference-paper-on-gelsphere-submitted-to-iros-2026",
-          title: 'Conference paper on GelSphere submitted to IROS 2026.',
-          description: "",
-          section: "News",},{id: "projects-assistive-technology-devices",
+        },{id: "projects-assistive-technology-devices",
           title: 'Assistive Technology Devices',
-          description: "Designed one-handed assistive devices with accessibility and manufacturing constraints.",
+          description: "Designed one-handed assistive devices with accessibility and manufacturing constraints for the Illinois Assistive Technology Program.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/assistive_tech/";
             },},{id: "projects-self-actuated-climbing-inspection-robot",
           title: 'Self-Actuated Climbing Inspection Robot',
-          description: "",
+          description: "Developing a climbing inspection robot with suction-based adhesion, suspension design, and tactile sensing integration.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/climbing_robot/";
             },},{id: "projects-spherical-gelsight-tactile-sensor",
@@ -64,6 +45,11 @@ ninja.data = [{
           description: "Built a spherical vision-based tactile sensor and its reconstruction pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gelsight_sensor/";
+            },},{id: "projects-smart-tool-wear-and-breakage-detection-via-servo-load-monitoring",
+          title: 'Smart Tool Wear and Breakage Detection via Servo Load Monitoring',
+          description: "Built an MLP in PyTorch to predict CNC tool flank wear from multi-sensor time-series data, with feature engineering from 10 kHz signals.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/smart_tool_wear/";
             },},{id: "projects-illini-solar-car-composite-structures-amp-vehicle-integration",
           title: 'Illini Solar Car: Composite Structures &amp;amp; Vehicle Integration',
           description: "Design and build composite fairing tooling and parts for a solar race car.",
@@ -71,7 +57,7 @@ ninja.data = [{
               window.location.href = "/projects/solar_car/";
             },},{id: "projects-arachnobot-terrain-adaptive-robot",
           title: 'ArachnoBot — Terrain-Adaptive Robot',
-          description: "Built a terrain-adaptive walking robot with 4-bar linkage legs.",
+          description: "Built a terrain-adaptive walking robot with 4-bar linkage legs. Won 1st Place and Distinguished Robotics at ASME Engineering Open House.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/spider_robot/";
             },},{
