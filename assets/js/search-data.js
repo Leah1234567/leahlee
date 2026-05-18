@@ -9,21 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "Projects",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-resume",
+  },{id: "nav-resume",
           title: "Resume",
           description: "Education, experience, and skills.",
           section: "Navigation",
@@ -32,32 +18,32 @@ ninja.data = [{
           },
         },{id: "projects-assistive-technology-devices",
           title: 'Assistive Technology Devices',
-          description: "Designed one-handed assistive devices with accessibility and manufacturing constraints for the Illinois Assistive Technology Program.",
+          description: "Designed and 3D-printed assistive devices (vegetable slicer, bag closer, iPad holder) under one-handed usability, single-print fabrication, and safety constraints. CAD, rapid prototyping, and iterative user testing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/assistive_tech/";
             },},{id: "projects-self-actuated-climbing-inspection-robot",
           title: 'Self-Actuated Climbing Inspection Robot',
-          description: "Developing a climbing inspection robot with suction-based adhesion, suspension design, and tactile sensing integration.",
+          description: "Designed and built a self-actuated surface inspection robot from scratch — system integration, CAD, embedded control (Arduino), suction-based adhesion, suspension design, and tactile sensing integration. Built test fixtures and iterated hardware to improve repeatability.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/climbing_robot/";
             },},{id: "projects-spherical-gelsight-tactile-sensor",
           title: 'Spherical GelSight Tactile Sensor',
-          description: "Built a spherical vision-based tactile sensor and its reconstruction pipeline.",
+          description: "Developed a spherical vision-based tactile sensor for omnidirectional robotic surface scanning — sensor fabrication, PCB/electronics integration (ESP32S3), Python/OpenCV reconstruction pipeline. Patent filed; paper submitted to IROS 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/gelsight_sensor/";
             },},{id: "projects-smart-tool-wear-and-breakage-detection-via-servo-load-monitoring",
           title: 'Smart Tool Wear and Breakage Detection via Servo Load Monitoring',
-          description: "Built an MLP in PyTorch to predict CNC tool flank wear from multi-sensor time-series data, with feature engineering from 10 kHz signals.",
+          description: "Built an MLP in PyTorch to predict CNC tool flank wear from force, torque, vibration, and acoustic signals at 10 kHz. Designed feature engineering pipeline (88 features, NumPy/SciPy) and evaluated with k-fold cross-validation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/smart_tool_wear/";
             },},{id: "projects-illini-solar-car-composite-structures-amp-vehicle-integration",
           title: 'Illini Solar Car: Composite Structures &amp;amp; Vehicle Integration',
-          description: "Design and build composite fairing tooling and parts for a solar race car.",
+          description: "Lead design and fabrication of composite fairing molds using 3D-printed tooling, carbon fiber/fiberglass layup, and vacuum bagging. Cross-functional vehicle integration with aero, structures, and electrical teams.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/solar_car/";
             },},{id: "projects-arachnobot-terrain-adaptive-robot",
           title: 'ArachnoBot — Terrain-Adaptive Robot',
-          description: "Built a terrain-adaptive walking robot with 4-bar linkage legs. Won 1st Place and Distinguished Robotics at ASME Engineering Open House.",
+          description: "Designed and built a terrain-adaptive walking robot with 4-bar linkage mechanism for stable locomotion over uneven surfaces. Rapid prototyping, mechanism design, and public demonstration to 1,000+ visitors. 1st Place, Distinguished Robotics.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/spider_robot/";
             },},{
