@@ -17,17 +17,31 @@ I was elected **Diversity, Equity, and Inclusion Coordinator** for the 2026–20
 
 ## What I Do
 
+<div class="row mt-3 mb-3">
+  <div class="col-sm-2">
+    {% include figure.liquid loading="eager" path="/assets/img/solar_car_fairing_door.png" alt="Fairing door panel CAD model" caption="Fairing door CAD" %}
+  </div>
+  <div class="col-sm-10">
+
 **Mold design and 3D-printed tooling.** I design the mold geometry for fairing door panels, then fabricate the molds using 3D-printed tooling. The molds have to match the aerodynamic surface shape while being rigid enough to maintain dimensional accuracy during layup and curing.
 
-{% include figure.liquid loading="eager" path="/assets/img/solar_car_fairing_door.png" alt="Fairing door panel CAD model" caption="CAD model of a fairing door panel" %}
-
 **Composite layup and vacuum bagging.** I lay up carbon fiber and fiberglass plies onto the molds, then vacuum bag the assemblies to consolidate the layers and control fiber-to-resin ratio. After curing, I trim, sand, and finish the parts to final dimensions and surface quality.
+
+  </div>
+</div>
+
+<div class="row mt-3 mb-3">
+  <div class="col-sm-2">
+    {% include figure.liquid loading="eager" path="/assets/img/solar_car_team.jpg" alt="Illini Solar Car team with Calypso" caption="Team with Calypso" %}
+  </div>
+  <div class="col-sm-10">
 
 **Vehicle integration.** This is where most of the problem-solving happens. The fairing panels have to fit onto the chassis alongside electrical harnesses, suspension components, and structural members that were designed by other subteams. Small alignment or mounting errors at the interface become large problems during assembly.
 
 I work closely with the aerodynamics, structures, and electrical teams to resolve these conflicts. A typical issue: the aero surface requires a specific curvature, but the internal structure needs a mounting tab that would create a bump in the surface. I adjust part interfaces, installation methods, and sometimes the geometry itself to make things fit within the tight vehicle tolerances.
 
-{% include figure.liquid loading="eager" path="/assets/img/solar_car_team.jpg" alt="Illini Solar Car team with Calypso" caption="Team photo with Calypso" %}
+  </div>
+</div>
 
 ## Why This Matters
 

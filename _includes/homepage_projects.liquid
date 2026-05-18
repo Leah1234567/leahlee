@@ -18,13 +18,13 @@
               {% endif %}
             </div>
           {% endif %}
-          <div id="{{ project.title | slugify }}" class="{% if project.img %}col-sm-8{% else %}col-sm-10{% endif %}">
+          <div id="{{ project.title | slugify }}" class="{% if project.img %}col-sm-7{% else %}col-sm-9{% endif %}">
             <div class="title">
               <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
             </div>
             <div class="author">{{ project.description }}</div>
           </div>
-          <div class="col-sm-2" style="text-align: right;">
+          <div class="col-sm-3" style="text-align: right; white-space: nowrap;">
             <em style="font-size: 0.85em; color: var(--global-text-color);">{{- project.date_range -}}</em>
           </div>
         </div>
