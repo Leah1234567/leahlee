@@ -13,6 +13,7 @@ horizontal: true
 {% assign sorted_projects = site.projects | sort: "start_date" | reverse %}
 
 {% if page.horizontal %}
+
 <div class="container">
   <div class="row row-cols-1">
   {% for project in sorted_projects %}
