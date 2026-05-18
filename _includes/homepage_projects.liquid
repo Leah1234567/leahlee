@@ -1,0 +1,39 @@
+{% assign sorted_projects = site.projects | sort: 'start_date' | reverse %}
+
+<div class="publications">
+  <ol class="bibliography">
+    {% for project in sorted_projects %}
+      <li>
+        <div class="row">
+          {% if project.img %}
+            <div class="col-sm-2 abbr">
+              {% assign img_path = project.img %}
+              {% assign img_ext = img_path | split: '.' | last | downcase %}
+              {% if img_ext == 'mp4' or img_ext == 'webm' %}
+                <video autoplay loop muted playsinline style="width: 100%; border-radius: 6px;">
+                  <source src="{{ img_path | relative_url }}" type="video/{{ img_ext }}">
+                </video>
+              {% else %}
+                <img src="{{ img_path | relative_url }}" alt="{{ project.title }}" style="width: 100%; border-radius: 6px;">
+              {% endif %}
+            </div>
+          {% endif %}
+          <div id="{{ project.title | slugify }}" class="{% if project.img %}col-sm-8{% else %}col-sm-10{% endif %}">
+            <div class="title">
+              <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            </div>
+            <div class="author">{{ project.description }}</div>
+          </div>
+          <div class="col-sm-2" style="text-align: right;">
+            <span
+              class="badge font-weight-bold light-green darken-1 text-uppercase"
+              style="font-size: 0.75em; background-color: var(--global-theme-color); color: white; padding: 3px 8px; border-radius: 4px;"
+            >
+              {{- project.date_range -}}
+            </span>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</div>
