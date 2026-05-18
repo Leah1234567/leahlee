@@ -5,7 +5,8 @@ description: Built a spherical vision-based tactile sensor and its reconstructio
 img: assets/img/GelSphere_teaser.mp4
 importance: 2
 category: research
-redirect: https://leahsylee.github.io/GelSphere
+date_range: "Feb 2025 – Present"
+start_date: 2025-02-01
 related_publications: true
 ---
 
@@ -35,5 +36,6 @@ I also documented the fabrication and calibration process so the build is repeat
 
 ## Outcomes
 
-- **Conference paper submitted to IROS**
+- **Conference paper submitted to IROS 2026** — <a href="{{ '/assets/pdf/GelSphere_IROS2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Paper PDF</a>
+- Patent filed for the spherical sensor design
 - Established a documented, repeatable fabrication and calibration process

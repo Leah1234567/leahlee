@@ -5,6 +5,8 @@ description: Design and build composite fairing tooling and parts for a solar ra
 img: assets/img/placeholder_project.jpg
 importance: 1
 category: engineering
+date_range: "Aug 2025 – Present"
+start_date: 2025-08-01
 ---
 
 {% comment %} TODO: Add hero image — assets/img/solar_car_hero.jpg {% endcomment %}

@@ -1,10 +1,12 @@
 ---
 layout: page
 title: "Assistive Technology Devices"
-description: Designed one-handed assistive devices with accessibility and manufacturing constraints.
+description: Designed one-handed assistive devices with accessibility and manufacturing constraints for the Illinois Assistive Technology Program.
 img: assets/img/Assistive.png
 importance: 2
 category: engineering
+date_range: "Aug 2024 – May 2025"
+start_date: 2024-08-01
 ---
 
 {% comment %} TODO: Add device photos (slicer, bag closer, iPad holder) {% endcomment %}

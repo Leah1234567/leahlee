@@ -1,9 +1,12 @@
 ---
 layout: page
 title: "Self-Actuated Climbing Inspection Robot"
-img: assets/img/climbing_bot_normal_testing.png
+description: Developing a climbing inspection robot with suction-based adhesion, suspension design, and tactile sensing integration.
+img: assets/img/climbing_bot_normal_testing.jpg
 importance: 1
 category: research
+date_range: "Aug 2025 – Present"
+start_date: 2025-08-01
 _styles: |
   .post article > figure {
     max-width: 30%;
@@ -40,10 +43,8 @@ We designed the suspension system that presses the GelBelt sensor into the surfa
 
 Testing showed that the suspension system could maintain the required contact force while the suction cups supported the robot’s weight. The module successfully adhered to flat acrylic and curved aluminum surfaces, and inverted tests confirmed stable attachment and clean tactile sensor readings.
 
-{% include figure.liquid loading="eager" path="/assets/img/climbing_bot_normal_testing.png" alt="Climbing robot normal-force testing" %}
+{% include figure.liquid loading="eager" path="/assets/img/climbing_bot_normal_testing.jpg" alt="Climbing robot normal-force testing" %}
 
-## Progress Report
+## Documents
 
-For more detail on the mechanism design, pneumatic system, and suspension modeling, see the full progress report:
-
-<a href="{{ '/assets/pdf/ClimbingBot_ProgressReport.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Climbing Bot Progress Report (PDF)</a>
+<a href="{{ '/assets/pdf/ClimbingBot_ProgressReport.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Progress Report</a> · <a href="{{ '/assets/pdf/ClimbingBot_DesignSpecifications.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Design Specifications</a> · <a href="{{ '/assets/pdf/ClimbingBot_Memos.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Memos</a> · <a href="{{ '/assets/pdf/ClimbingBot_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Slides</a>

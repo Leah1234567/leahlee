@@ -1,10 +1,12 @@
 ---
 layout: page
 title: "ArachnoBot — Terrain-Adaptive Robot"
-description: "Built a terrain-adaptive walking robot with 4-bar linkage legs."
+description: "Built a terrain-adaptive walking robot with 4-bar linkage legs. Won 1st Place and Distinguished Robotics at ASME Engineering Open House."
 img: assets/img/Archnobot.png
 importance: 3
 category: engineering
+date_range: "Jan 2025 – May 2025"
+start_date: 2025-01-01
 ---
 
 {% comment %} TODO: Add ArachnoBot photo — assets/img/arachnobot.jpg {% endcomment %}
