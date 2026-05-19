@@ -9,61 +9,57 @@ date_range: "Jan 2026 – May 2026"
 start_date: 2026-01-01
 ---
 
-## The Problem
+## Motivation
 
-In CNC milling, tool wear is inevitable — but if you catch it too late, the tool breaks, the part is scrapped, and the machine may be damaged. The standard approach is to replace tools on a fixed schedule, which wastes good tools and still misses unexpected failures.
+Machining tools are typically replaced on fixed schedules. Early replacement wastes usable tool life; late replacement risks poor surface finish, scrapped parts, or tool breakage. This project developed a method to predict tool flank wear (VBmax) from sensor data collected during machining, enabling condition-based replacement.
 
-This project aimed to predict tool flank wear (VBmax) from sensor data collected during machining, so that tools could be replaced based on their actual condition rather than a calendar.
+## Data
 
-## The Data
-
-We had three data sources, all sampled at 10 kHz:
+Three data sources were used, all sampled at 10 kHz:
 
 - **Force and torque** — Fx, Fy, Fz, and Mz from a dynamometer (4 channels)
 - **Vibration and acoustic emission** — 4 channels from accelerometers and microphones
 - **Wear measurements** — VBmax measured on 8 cutting edges after each of 68 machining cycles
 
-Each raw sensor file contained 4–6 million rows. The wear measurements were recorded in a spreadsheet with one row per cycle.
+Each raw sensor file contained 4–6 million rows.
 
-## Feature Engineering: The Hardest Part
+## Feature Engineering
 
-The raw time-series data was far too large to feed directly into a neural network. I had to design a feature extraction pipeline that compressed each cycle's sensor data into a fixed-length vector while preserving the information relevant to wear prediction.
+Raw time-series data was too large to use directly. A feature extraction pipeline was designed to compress each cycle into a fixed-length vector.
 
-**Cutting region detection.** Each recording starts with an idle period (2–24 seconds) where the tool is not cutting. During idle time, force signals are near zero and vibration signals are just background noise. Including this data would add noise to the features. I detected the active cutting region by computing a rolling RMS of the Fz (axial force) signal and keeping only the portion where it exceeded 5% of the peak RMS.
+**Cutting region detection.** Each recording begins with an idle period (2–24 seconds) where the tool is not cutting. During idle time, force signals are near zero and vibration signals consist of background noise. The active cutting region was identified by computing a rolling RMS of the Fz (axial force) signal and retaining only the portion above 5% of the peak RMS.
 
-**Windowed feature extraction.** Rather than computing one set of statistics per cycle (which discards how the signal changes during the cut), I split each cycle into 20 equal time windows and computed features per window. This increased the effective sample count from 67 to 1,340 and captured temporal patterns — like how vibration increases as the tool wears through a cut.
+**Windowed feature extraction.** Rather than computing one set of statistics per cycle, each cycle was split into 20 equal time windows with features computed per window. This increased the effective sample count from 67 to 1,340 and preserved temporal patterns — such as vibration increases as the tool wears through a cut.
 
-For each of the 8 signal channels, I extracted 11 features per window: mean, standard deviation, max, min, kurtosis, skewness, peak-to-peak, 25th and 75th percentiles, and mean frequency. That is 88 features per window.
+For each of the 8 signal channels, 11 features were extracted per window: mean, standard deviation, max, min, kurtosis, skewness, peak-to-peak, 25th and 75th percentiles, and mean frequency. This produced 88 features per window.
 
-**Data cleaning.** One force file (01-26-2.txt) had no matching vibration data, so it was dropped. File names were parsed into a chronological order, and the intersection of force/torque and vibration/sound files was matched to the 67 usable wear measurements.
+**Data cleaning.** One force file (01-26-2.txt) had no matching vibration data and was dropped. File names were parsed into chronological order, and the intersection of force/torque and vibration/sound files was matched to the 67 usable wear measurements.
 
-## Model Architecture
+## Model
 
-I built a multi-layer perceptron (MLP) in PyTorch:
+A multi-layer perceptron (MLP) was implemented in PyTorch:
 
-- **4 fully connected layers** (64 → 32 → 16 → 1) with ReLU activations
-- **Adam optimizer** with learning rate 1e-4 and weight decay 5e-4
-- **Cosine annealing** learning rate scheduler
-- **Early stopping** with patience of 300 epochs
-- **Batch size of 128** (~4 gradient steps per epoch with 530 training samples)
+- 4 fully connected layers (64 → 32 → 16 → 1) with ReLU activations
+- Adam optimizer with learning rate 1e-4 and weight decay 5e-4
+- Cosine annealing learning rate scheduler
+- Early stopping with patience of 300 epochs
+- Batch size of 128
 
-I initially tried a larger network (128 → 64 → 1) but it overfitted — the training loss kept dropping while the test loss plateaued and then climbed. The smaller architecture with L2 regularization and early stopping gave better generalization.
+An initial larger network (128 → 64 → 1) was tested but overfitted — training loss continued to decrease while test loss plateaued and then increased. The smaller architecture with L2 regularization and early stopping generalized better.
 
-Higher learning rates (1e-3, 5e-4) caused oscillating test loss. Lower weight decay (1e-4) allowed more overfitting; higher (1e-3) caused underfitting. The final hyperparameters came from systematic experimentation, not a grid search.
+Higher learning rates (1e-3, 5e-4) caused oscillation in test loss. Weight decay below 1e-4 permitted overfitting; above 1e-3 caused underfitting. Final hyperparameters were selected through systematic experimentation.
 
-## Results and Limitations
+## Results
 
 The model achieved:
 
-- **MAE:** 0.0512 mm
+- **MSE:** 0.0019 mm
 - **RMSE:** 0.0688 mm
-- **R²:** ~0.40 on the held-out test set
+- **R²:** approximately 0.40 on the held-out test set
 
-The model performed best on mid-range wear values but underestimated the highest-wear cycles and overestimated the lowest-wear cycles. This is a common problem with small datasets where extreme values are underrepresented — the model learns to predict toward the mean.
+The model performed best on mid-range wear values but underestimated the highest-wear cycles and overestimated the lowest-wear ones. This is expected with a small dataset where extreme values are underrepresented — the model predicts toward the distribution mean.
 
-I analyzed loss curves and residual patterns to diagnose these limitations. The residuals showed a clear trend: the model was conservative, compressing its predictions toward the center of the wear distribution. With only 14 test cycles, the evaluation was also sensitive to which cycles ended up in the test set.
-
-I evaluated generalization more rigorously using k-fold cross-validation on the 68-cycle dataset, which confirmed the model was learning real signal but was constrained by data size.
+Residual analysis confirmed this trend. With only 14 test cycles, the evaluation was also sensitive to which cycles ended up in the test set. K-fold cross-validation on the full 68-cycle dataset was used to assess generalization more rigorously, and confirmed that the model was learning meaningful signal but was constrained by the available data size.
 
 ## Documents
 

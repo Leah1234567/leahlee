@@ -9,30 +9,28 @@ date_range: "Aug 2024 – May 2025"
 start_date: 2024-08-01
 ---
 
-## The Project
+## Background
 
-Through ASME and the Illinois Assistive Technology Program (IATP), I designed devices for users who must perform everyday tasks using only one hand. Each device had to work within a set of hard constraints that made the design problem genuinely difficult.
+This project was conducted through ASME in collaboration with the Illinois Assistive Technology Program (IATP). The objective was to design devices for users who perform everyday tasks with one hand.
 
-## The Constraints
+## Design Constraints
 
-The devices had to:
+Each device had to satisfy the following requirements:
 
-- **Be usable with one hand** — every interaction, from setup to use to cleanup, must be completable single-handed
-- **Be 3D-printable in a single print** — no multi-part assemblies, no fasteners, no post-assembly
-- **Print in reasonable time** — a 12-hour print is not practical for production
-- **Be lightweight** — users may have limited grip strength
-- **Be safe** — no pinch points, sharp edges, or unstable positions during use
+- Fully operable with one hand — including setup, use, and cleanup
+- 3D-printable in a single print — no multi-part assemblies or fasteners
+- Reasonable print time (under approximately 4 hours on a consumer printer)
+- Lightweight, for users with limited grip strength
+- Safe — no pinch points, sharp edges, or unstable positions during use
 
-These constraints are what made the project interesting. It is not hard to design a vegetable slicer. It is hard to design one that a person with one hand can load, operate, and clean without help, and that can be produced on a consumer 3D printer in under 4 hours.
+## Devices
 
-## The Devices
+**One-hand vegetable slicer.** Holds produce against a cutting surface so the user can slice single-handed. The first prototype secured the vegetable but was difficult to load with one hand — the user had to push it into a clamp, requiring a second hand to stabilize. The design was revised to use a gravity-assisted loading channel where the vegetable is dropped in from above and secured by a spring-loaded holder.
 
-**One-hand vegetable slicer.** Holds produce in place against a cutting surface so the user can slice with their one available hand. The first prototype held the vegetable securely but was difficult to load one-handed — you needed to push the vegetable into a clamp, which required a second hand to stabilize. I redesigned it with a gravity-assisted loading channel where the user drops the vegetable in from above and a spring-loaded holder secures it.
+**Ziplock bag closer.** Allows a user to open and seal a ziplock bag with one hand. The difficulty is that ziplock bags are flexible and cannot be sealed without holding both sides. A channel was designed to hold the bag open and guide the seal closed in a single sliding motion.
 
-**Ziplock bag closer.** Helps a user open and seal a ziplock bag with one hand. The challenge was that ziplock bags are floppy — you cannot seal them without holding both sides. I designed a channel that holds the bag open and guides the seal closed in a single sliding motion.
-
-**iPad holder.** Supports an iPad with a one-handed insertion and release mechanism. The device needed to hold the iPad securely at a usable angle, but also allow the user to remove it without two-handed grip. I used a friction-fit cradle with a thumb-operated release tab.
+**iPad holder.** Supports an iPad with one-handed insertion and release. The device holds the iPad at a usable angle while allowing removal without a two-handed grip. A friction-fit cradle with a thumb-operated release tab was used.
 
 ## Process
 
-I worked with the ASME project lead and the IATP project manager to define the requirements, then iterated through CAD and printed prototypes. Each design went through multiple rounds of testing against the constraint list. A design that passed the "usable with one hand" test might fail the "single print" constraint because it needed support structures that made the geometry unprintable. I adjusted geometries, wall thicknesses, and tolerances to satisfy all constraints simultaneously.
+I worked with the ASME project lead and the IATP project manager to define requirements, then iterated through CAD models and printed prototypes. Each design went through multiple rounds of testing against the constraint list. In some cases, a design that passed the usability test failed the single-print constraint because it required support structures that made the geometry unprintable. Geometries, wall thicknesses, and tolerances were adjusted to satisfy all constraints simultaneously.
