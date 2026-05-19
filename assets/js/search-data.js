@@ -41,6 +41,11 @@ ninja.data = [{
           description: "Lead design and fabrication of composite fairing molds using 3D-printed tooling, carbon fiber/fiberglass layup, and vacuum bagging. Cross-functional vehicle integration with aero, structures, and electrical teams.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/solar_car/";
+            },},{id: "projects-somansa-ztna-research-and-rag-system-development",
+          title: 'Somansa: ZTNA Research and RAG System Development',
+          description: "Built Python automation tools for web crawling, PDF-to-Markdown and HTML-to-Markdown conversion, and data cleaning for AI ingestion. Developed a RAG pipeline with systematic LLM and embedding model evaluation across multiple configurations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/somansa/";
             },},{id: "projects-arachnobot-terrain-adaptive-robot",
           title: 'ArachnoBot — Terrain-Adaptive Robot',
           description: "Designed and built a terrain-adaptive walking robot with 4-bar linkage mechanism for stable locomotion over uneven surfaces. Rapid prototyping, mechanism design, and public demonstration to 1,000+ visitors. 1st Place, Distinguished Robotics.",
