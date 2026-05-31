@@ -60,7 +60,3 @@ The model achieved:
 The model performed best on mid-range wear values but underestimated the highest-wear cycles and overestimated the lowest-wear ones. This is expected with a small dataset where extreme values are underrepresented — the model predicts toward the distribution mean.
 
 Residual analysis confirmed this trend. With only 14 test cycles, the evaluation was also sensitive to which cycles ended up in the test set. K-fold cross-validation on the full 68-cycle dataset was used to assess generalization more rigorously, and confirmed that the model was learning meaningful signal but was constrained by the available data size.
-
-## Documents
-
-<a href="{{ '/assets/pdf/SmartToolWear_ProjectNotes.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Project Notes</a>

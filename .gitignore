@@ -12,4 +12,6 @@ assets/libs/
 assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
-vendorassets/Experience/
+vendor
+assets/Experience/Climbing Bot Design Specifications.pdf
+assets/Experience/Smart Tool Wear and Breakage Detection via Servo Load Monitoring ProjectNotes.pdf

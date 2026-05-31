@@ -64,4 +64,4 @@ The robot reliably adheres to and traverses flat and curved surfaces. Inverted o
 
 ## Documents
 
-<a href="{{ '/assets/pdf/ClimbingBot_ProgressReport.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Progress Report</a> · <a href="{{ '/assets/pdf/ClimbingBot_DesignSpecifications.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Design Specifications</a>
+<a href="{{ '/assets/pdf/ClimbingBot_ProgressReport.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Progress Report</a>
