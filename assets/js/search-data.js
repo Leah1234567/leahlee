@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-resume",
-          title: "Resume",
-          description: "Education, experience, and skills.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/resume/";
-          },
-        },{id: "projects-assistive-technology-devices",
+  },{id: "projects-assistive-technology-devices",
           title: 'Assistive Technology Devices',
           description: "Designed and 3D-printed assistive devices (vegetable slicer, bag closer, iPad holder) under one-handed usability, single-print fabrication, and safety constraints. CAD, rapid prototyping, and iterative user testing.",
           section: "Projects",handler: () => {
@@ -47,13 +40,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/spider_robot/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/Leah_Lee_Resume.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
