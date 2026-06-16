@@ -36,11 +36,6 @@ ninja.data = [{
           description: "Built an MLP in PyTorch to predict CNC tool flank wear from force, torque, vibration, and acoustic signals at 10 kHz. Designed feature engineering pipeline (88 features, NumPy/SciPy) and evaluated with k-fold cross-validation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/smart_tool_wear/";
-            },},{id: "projects-illini-solar-car-composite-structures-amp-vehicle-integration",
-          title: 'Illini Solar Car: Composite Structures &amp;amp; Vehicle Integration',
-          description: "Lead design and fabrication of composite fairing molds using 3D-printed tooling, carbon fiber/fiberglass layup, and vacuum bagging. Cross-functional vehicle integration with aero, structures, and electrical teams.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/solar_car/";
             },},{id: "projects-somansa-ztna-research-and-rag-system-development",
           title: 'Somansa: ZTNA Research and RAG System Development',
           description: "Built Python automation tools for web crawling, PDF-to-Markdown and HTML-to-Markdown conversion, and data cleaning for AI ingestion. Developed a RAG pipeline with systematic LLM and embedding model evaluation across multiple configurations.",
