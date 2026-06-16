@@ -21,12 +21,6 @@ The leg mechanism uses a 4-bar linkage, which converts rotary input into a walki
 
 A single motor drives the linkage. The tradeoff of this approach is that the gait is fixed — stride length and height cannot be adjusted during operation. For a demonstration robot on uneven terrain, reliability was prioritized over adaptability.
 
-## Fabrication and Iteration
-
-The first version had legs that were too short relative to the body, which caused the robot to rock side-to-side on rough surfaces. The legs were lengthened and the linkage ratios adjusted to increase ground clearance during the swing phase.
-
-A second issue was that the 3D-printed linkage pins wore out under load. Switching to metal pins with press-fit bushings eliminated the slop and improved gait smoothness.
-
 ## Result
 
 ArachnoBot was demonstrated at Engineering Open House to over 1,000 visitors. The project received **1st Place** in Distinguished Robotics at ASME, among 200+ exhibits.

@@ -81,14 +81,6 @@ cv:
           - Compile research posters, summaries, and photos to produce semester-end archive book for program documentation
 
     Projects:
-      - name: Illini Solar Car
-        start_date: 2025-08
-        end_date: present
-        highlights:
-          - Design and fabrication of fairing door molds using 3D-printed tooling and carbon fiber/fiberglass composite layup
-          - Manufacture and assemble composite components using sanding, trimming, surface finishing, and vacuum bagging
-          - Coordinate with aero, structures, and melec teams to ensure proper fit and integration of structural components
-
       - name: "ArachnoBot: ASME 1st Place, Distinguished Robotics (200+ exhibits)"
         start_date: 2025-01
         end_date: 2025-05

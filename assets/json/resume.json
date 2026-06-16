@@ -124,16 +124,6 @@
   "publications": [],
   "projects": [
     {
-      "name": "Illini Solar Car",
-      "startDate": "2025-08-01",
-      "endDate": "",
-      "highlights": [
-        "Design and fabrication of fairing door molds using 3D-printed tooling and carbon fiber/fiberglass composite layup",
-        "Manufacture and assemble composite components using sanding, trimming, surface finishing, and vacuum bagging",
-        "Coordinate with aero, structures, and melec teams to ensure proper fit and integration"
-      ]
-    },
-    {
       "name": "ArachnoBot — ASME 1st Place, Distinguished Robotics",
       "startDate": "2025-01-01",
       "endDate": "2025-05-01",
